@@ -1,0 +1,62 @@
+body{
+    font-family: Lucida Sans;
+    background-image: linear-gradient(antiquewhite, tan, goldenrod);
+}
+
+.content{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.content div{
+    text-align: center; 
+}
+
+.header{
+    background-color: goldenrod; 
+    padding: 20px;
+}
+
+.header, .nav, .footer{
+    grid-column: 1 / 7;
+}
+
+.left{
+    padding: 10px; 
+}
+
+.middle{
+    grid-column: 2 / span 4; 
+    padding: 30px; 
+}
+
+.right{
+    padding: 10px; 
+    background-color: black; 
+}
+
+.nav{
+    background-color: black;
+    padding: 20px;  
+}
+
+.nav ul{
+    white-space: nowrap; 
+    max-width: 1200px; 
+    margin: 0, auto; 
+    text-align: center; 
+}
+
+.nav li{
+    width: 25%; 
+    font-size: 20px;
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: antiquewhite;
+}
