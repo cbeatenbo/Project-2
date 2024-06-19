@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monthly Mortgage Payment Calculator</title>
+        <link rel="stylesheet" href="Monthly_Mortgage.css">
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <h1>Monthly Mortgage Payment Calculator</h1>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="https://www.nerdwallet.com/article/mortgages/tips-for-first-time-home-buyers">Home Buying Tips</a></li>
+                    <li><a href="https://realestate.usnews.com/real-estate/slideshows/secrets-to-selling-your-home-faster">Tips on Selling Your Home</a></li>
+                    <li><a href="https://www.nerdwallet.com/mortgages/how-much-house-can-i-afford">How Much Can You Afford to Buy a House?</a></li>
+                </ul>
+            </div>
+
+            <div class="left">
+                <h2>How Monthly Mortgage Calculators Work</h2>
+                <p>
+                    Mortgage calculators are automated tools that enable users to determine the financial implications of changes 
+                    in one or more variables in a mortgage financing arrangement. Mortgage calculators are used by consumers to 
+                    determine monthly repayments, and by mortgage providers to determine the financial suitability of a home loan 
+                    applicant. Mortgage calculators are frequently on for-profit websites, though the Consumer Financial Protection 
+                    Bureau has launched its own public mortgage calculator.
+                </p>
+                <p>
+                    The major variables in a mortgage calculation include loan principal, balance, periodic compound interest rate, 
+                    number of payments per year, total number of payments and the regular payment amount. More complex calculators 
+                    can take into account other costs associated with a mortgage, such as local and state taxes, and insurance. 
+                </p>
+            </div>
+
+            <div class="middle">
+                <p>Enter a positive amount for the P (Principal), r (monthly rate), -n (the length of the mortgage in months - years multiplied by 12)
+                </p>
+                <form action="javascript:void(0)" onsubmit="calcMortgage()">
+                    <p><label for="p">P: </label><input id="p" name="p" type="number" min=1 required></p>
+                    <p><label for="r">r: </label><input id="r" name="r" type="decimal" min=1 required></p>
+                    <p><label for="n">n: </label><input id="n" name="n" type="number" min=1 required></p>
+                    <p>Monthly Payment: $<span class="monthly_payment"></span></p>
+                    <p><input type="submit" value="Calculate!"></p>
+                </form>
+            </div>
+
+            <div class="right">
+                <img src="Home_Buying.png">
+                <img src="Mortgage_Calculator.png">
+                <img src="Home.png">
+            </div>
+
+            <div class="footer"><a href="https://github.com/cbeatenbo/Project-2">GitHub Project 2 Repository</a></div>
+        </div>
+    </body>
+</html>
