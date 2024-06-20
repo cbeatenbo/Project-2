@@ -36,12 +36,13 @@
 
             <div class="middle">
                 <p>Enter a positive amount for the P (Principal), r (monthly rate), -n (the length of the mortgage in months - years multiplied by 12)
+                <p>Enter a positive amount for the P (Principal), r (monthly rate), -n (the length of the mortgage in months - years multiplied by 12)
                 </p>
                 <form action="javascript:void(0)" onsubmit="calcMortgage()">
-                    <p><label for="p">P: </label><input id="p" name="p" type="number" min=1 required></p>
-                    <p><label for="r">r: </label><input id="r" name="r" type="decimal" min=1 required></p>
+                    <p><label for="p">P: </label><input id="p" name="x" type="number" min=1 required></p>
+                    <p><label for="r">r: </label><input id="r" name="y" type="decimal" min=1 required></p>
                     <p><label for="n">n: </label><input id="n" name="n" type="number" min=1 required></p>
-                    <p>Monthly Payment: $<span class="monthly_payment"></span></p>
+                    <p>Monthly Payment $<span class="payment"></span></p>
                     <p><input type="submit" value="Calculate!"></p>
                 </form>
             </div>
